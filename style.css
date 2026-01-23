@@ -5,6 +5,11 @@
   padding:2px;
   font-family: 'montserrat',Courier, monospace;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
   .card-container { 
     background-size:10px;
@@ -13,63 +18,184 @@
     background-color: rgb(238, 236, 236);
     border: 1px solid #252222; 
   }
-  .card-discounts {
-    background-color: darkorange;
-    width: 240px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-  }
   
-  .card-discounts-1 {
-    background-color:green;
-    width: 240px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-
-  .card-discounts-2 {
-    background-color:greenyellow;
-    width: 240px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-
-  .card-discounts-3 {
-    background-color:red;
-    width: 240px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-  }
+  
   
   .product-compount1{
     margin: 5px;
     padding: 5px;
     margin-left: 30px;
-    background-color: ;
   }
 
   .product-compount2{
     margin: 5px;
     padding: 5px;
     margin-left: 20px;
-    background-color: ;
   }
 
   .product-compount3{
     margin: 5px;
     padding: 5px;
     margin-left: 40px;
-    background-color: ;
   }
 
  
 .montserrat-uniquifier {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/*  font-weight: <weight>;
+  font-style: normal;*/
 } 
+
+
+.card-container2 { 
+    background-size:10px;
+    width: 330px;
+    margin: 20px;
+    background-color: rgb(238, 236, 236);
+    border: 1px solid #252222; 
+  }
+  
+  
+  
+  .product-compount1{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 30px;
+  }
+
+  .product-compount2{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 20px;
+  }
+
+  .product-compount3{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 40px;
+  }
+
+ 
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+/*  font-weight: <weight>;
+  font-style: normal;*/
+} 
+
+
+.card-container3 { 
+    background-size:10px;
+    width: 330px;
+    margin: 20px;
+    background-color: rgb(238, 236, 236);
+    border: 1px solid #252222; 
+  }
+  
+  
+  
+  .product-compount1{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 30px;
+ }
+
+  .product-compount2{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 20px;
+ }
+
+  .product-compount3{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 40px;
+ }
+
+ 
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+ /* font-weight: <weight>;
+  font-style: normal;*/
+} 
+
+.card-container4 { 
+    background-size:10px;
+    width: 330px;
+    margin: 20px;
+    background-color: rgb(238, 236, 236);
+    border: 1px solid #252222; 
+  }
+  
+  
+  
+  .product-compount1{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 30px;
+  }
+
+  .product-compount2{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 20px;
+  }
+
+  .product-compount3{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 40px;
+    
+  }
+
+ 
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+/*  font-weight: <weight>;
+  font-style: normal;*/
+} 
+
+.card-container5 { 
+    background-size:10px;
+    width: 330px;
+    margin: 20px;
+    background-color: rgb(238, 236, 236);
+    border: 1px solid #252222; 
+  }
+  
+  
+  
+  .product-compount1{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 30px;
+  }
+
+  .product-compount2{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 20px;
+  }
+
+  .product-compount3{
+    margin: 5px;
+    padding: 5px;
+    margin-left: 40px;
+  }
+
+ 
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+} 
+
+
+
+
+
+
