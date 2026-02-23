@@ -1,33 +1,57 @@
- // 1. Поиск элементов (делаем один раз)
 const cards = document.querySelectorAll('.card-container');
-const firstCard = cards[0]; // Первая карточка — это просто нулевой элемент списка
+const firstCard = cards[0];
 
-// 2. Вспомогательная функция для смены цвета
+// 2. функция для смены цвета
 const setBg = (element, color) => {
-  // Если передали список (NodeList), красим всех, если один элемент — только его
-  element.forEach ? element.forEach(el => el.style.backgroundColor = color) : element.style.backgroundColor = color;
+if (!element) return;
+
+if (element instanceof NodeList) {
+// Если это список элементов (все карточки)
+element.forEach(el => el.style.backgroundColor = color);
+} else {
+// Если это один элемент (первая карточка)
+element.style.backgroundColor = color;
+}
 };
 
-// 3. Обработчики 
-document.querySelector('#change-color-card-button').onclick = () => setBg(cards, '#00FF00');
-document.querySelector('#change-all-card-color-button').onclick = () => setBg(cards, 'rgb(3, 39, 246)');
-document.querySelector('#change-color-first-card-btn').onclick = () => setBg(firstCard, 'rgb(234, 0, 255)');
+// 3. Обработчики для кнопок (с проверкой на существование кнопки)
+
+const btnAllGreen = document.querySelector('#change-color-card-button');
+if (btnAllGreen) btnAllGreen.onclick = () => setBg(cards, '#00FF00');
+
+const btnAllBlue = document.querySelector('#change-all-card-color-button');
+if (btnAllBlue) btnAllBlue.onclick = () => setBg(cards, 'rgb(3, 39, 246)');
+
+const btnFirstCard = document.querySelector('#change-color-first-card-btn');
+if (btnFirstCard) btnFirstCard.onclick = () => setBg(firstCard, 'rgb(234, 0, 255)');
 
 // 4. Окна и логи
-document.querySelector('#open-google-btn').onclick = () => {
-  if (confirm('Открыть Google?')) window.open('https://google.com');
+const btnGoogle = document.querySelector('#open-google-btn');
+if (btnGoogle) {
+btnGoogle.onclick = () => {
+if (confirm('Открыть Google?')) window.open('[https://google.com]()', '_blank');
 };
+}
 
-document.querySelector('#output-log-btn').onclick = () => {
-  console.log('ДЗ ГОТОВО');
-  alert('Лог выведен в консоль');
+const btnLog = document.querySelector('#output-log-btn');
+if (btnLog) {
+btnLog.onclick = () => {
+console.log('ДЗ ГОТОВО');
+alert('Лог успешно выведен в консоль браузера!');
 };
+}
 
-// 5. Текст и классы
+// 5. Работа с заголовком и переключателем класса
 const title = document.querySelector('.product-title');
+if (title) {
 title.onmouseover = () => console.log(title.textContent);
+}
 
-document.querySelector('#change-color-red-btn').onclick = (e) => e.target.classList.toggle('change-color-green');
-
-
+const btnRed = document.querySelector('#change-color-red-btn');
+if (btnRed) {
+btnRed.onclick = (e) => {
+// Включаем/выключаем зеленый цвет кнопке
+e.target.classList.toggle('change-color-green');
+};
+}
 
