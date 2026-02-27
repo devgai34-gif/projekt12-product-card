@@ -1,201 +1,200 @@
+/*{
+  min-height: 40px;
+  box-sizing:border-box;
+  margin-left:50px; 
+  margin:2px;       
+  padding:2px;
+  font-family: 'montserrat', Courier, monospace;
+}
+
+.bg-flowers {
+  background-image: url('maket1-mys\bg 1.png'); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-container {
+    width: 330px;
+    background-color: rgb(236, 238, 237);
+    border: 1px solid #252222;
+    padding: 15px;
+    padding-left:15px; 
+    position: relative; 
+}
+
+.product-compount1 { margin: 2px 2px 2px 10px; }
+.product-compount2 { margin: 2px 2px 2px 10px; }
+.product-compount3 { margin: 2px 2px 2px 20px; }
+
+.bg-flowers {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: -1; 
+    background-image: url('maket1-mys/bg 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+}
+
+.card-background {
+    background-image: url("images/background_dandelion.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-size: cover;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 5px 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.change-color-red {
+    background-color: rgb(98, 255, 0); 
+    color: #ffffff;
+}
+
+.change-color-green {
+    background-color: green;
+    color: white;
+}*/
+
+
 *{
   box-sizing:border-box;
-  margin-left:50px;
-  margin:2px;
+  margin-left:50px; 
+  margin:2px;       
   padding:2px;
-  font-family: 'montserrat',Courier, monospace;
+  font-family: 'montserrat', Courier, monospace;
 }
+
+.bg-flowers {
+  background-image: url('maket1-mys\bg 1.png'); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-  .card-container { 
-    background-size:10px;
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-container {
     width: 330px;
-    margin: 20px;
-    background-color: rgb(238, 236, 236);
-    border: 1px solid #252222; 
-  }
-  
-  
-  
-  .product-compount1{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 30px;
-  }
+    background-color: rgb(236, 238, 237);
+    border: 1px solid #252222;
+    padding: 15px; 
+    position: relative; 
+}
 
-  .product-compount2{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 20px;
-  }
+.product-compount1 { margin: 5px 5px 5px 30px; }
+.product-compount2 { margin: 5px 5px 5px 20px; }
+.product-compount3 { margin: 5px 5px 5px 40px; }
 
-  .product-compount3{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 40px;
-  }
+.bg-flowers {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: -1; 
+    background-image: url('maket1-mys/bg 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+}
 
- 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-/*  font-weight: <weight>;
-  font-style: normal;*/
-} 
+.card-background {
+    background-image: url("images/background_dandelion.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-size: cover;
+}
 
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
 
-.card-container2 { 
-    background-size:10px;
-    width: 330px;
-    margin: 20px;
-    background-color: rgb(238, 236, 236);
-    border: 1px solid #252222; 
-  }
-  
-  
-  
-  .product-compount1{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 30px;
-  }
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+}
 
-  .product-compount2{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 20px;
-  }
+.change-color-red {
+    background-color: rgb(98, 255, 0); 
+    color: #ffffff;
+}
 
-  .product-compount3{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 40px;
-  }
-
- 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-/*  font-weight: <weight>;
-  font-style: normal;*/
-} 
-
-
-.card-container3 { 
-    background-size:10px;
-    width: 330px;
-    margin: 20px;
-    background-color: rgb(238, 236, 236);
-    border: 1px solid #252222; 
-  }
-  
-  
-  
-  .product-compount1{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 30px;
- }
-
-  .product-compount2{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 20px;
- }
-
-  .product-compount3{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 40px;
- }
-
- 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
- /* font-weight: <weight>;
-  font-style: normal;*/
-} 
-
-.card-container4 { 
-    background-size:10px;
-    width: 330px;
-    margin: 20px;
-    background-color: rgb(238, 236, 236);
-    border: 1px solid #252222; 
-  }
-  
-  
-  
-  .product-compount1{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 30px;
-  }
-
-  .product-compount2{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 20px;
-  }
-
-  .product-compount3{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 40px;
-    
-  }
-
- 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-/*  font-weight: <weight>;
-  font-style: normal;*/
-} 
-
-.card-container5 { 
-    background-size:10px;
-    width: 330px;
-    margin: 20px;
-    background-color: rgb(238, 236, 236);
-    border: 1px solid #252222; 
-  }
-  
-  
-  
-  .product-compount1{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 30px;
-  }
-
-  .product-compount2{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 20px;
-  }
-
-  .product-compount3{
-    margin: 5px;
-    padding: 5px;
-    margin-left: 40px;
-  }
-
- 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>;
-  font-style: normal; */
-} 
-
-
-
-
-
-
+.change-color-green {
+    background-color: green;
+    color: white;
+}
