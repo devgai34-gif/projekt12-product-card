@@ -1,20 +1,17 @@
 import { JSDOM } from 'jsdom';
 const dom = new JSDOM(`<!DOCTYPE html><html><body><div id="student-template"></div></body></html>`);
-// Эти две строки — ВАЖНЫ. 
-// Они делают document доступным во всем скрипте.
+
 global.window = dom.window;
 global.document = dom.window.document;
 global.HTMLElement = dom.window.HTMLElement;
 global.HTMLTemplateElement = dom.window.HTMLTemplateElement;
 
-// строка сработает, всё настроено 
 console.log("Проверка окружения: document =", typeof document); 
 
 import products from './script.js';
 import readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 
-// Настраиваю интерфейс ввода для Node.js
 const rl = readline.createInterface({ input, output });
 
 // Задание-2. Создаем карту названий - описаний (через .reduce)

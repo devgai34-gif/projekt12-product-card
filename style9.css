@@ -1,0 +1,210 @@
+/* 1. Сброс стилей и общие настройки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* 2. Стили кнопок (для твоих id в HTML) */
+.btn-style {
+    padding: 20px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc0707;
+    color: #3a3737;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-style:hover {
+    background-color: #ea8c8c;
+}
+
+/* 3. МОДАЛЬНОЕ ОКНО И ОВЕРЛЕЙ */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* background-color: rgba(0, 0, 0, 0.7);*/
+    display: none; /* Скрыто по умолчанию */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+  
+  /* РАЗМЫТИЯ: */
+  backdrop-filter: blur(8px); 
+}
+
+
+/* Класс, который добавляет JS для открытия */
+.overlay.modal-showed {
+    display: flex !important;
+}
+
+.modal {
+    background: #f99c9c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(227, 10, 10, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #583030;
+}
+
+/* Форма регистрации внутри модалки */
+#registrationForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#registrationForm label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #550c0c;
+    font-size: 14px;
+}
+
+#registrationForm input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #506b5c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#registrationForm button {
+    margin-top: 20px;
+    padding: 12px;
+}
+
+/* 4. ФУТЕР (ТВОЯ ФОРМА ПОДПИСКИ) */
+.site-footer {
+    background-color: #40772f;
+    color: #8de9b2;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grup-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer_logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer_socials img {
+    width: 30px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Делает иконки белыми */
+}
+
+/* Форма подписки: класс .input-button как в JS */
+.input-button {
+    display: flex;
+    background: #7c8aeb;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.subscribe-input {
+    border: none;
+    padding: 12px;
+    outline: none;
+    flex-grow: 1;
+    color: #481818;
+}
+
+.subscribe-btn {
+    background-color: #4d3030;
+    color: #a7eeae;
+    border: none;
+    padding: 0 115px;
+    cursor: pointer;
+    font-weight: bold;
+    border-left: 1px solid #b2e7c6;
+}
+
+.subscribe-btn:hover {
+    background-color: #444;
+}
+
+/* Навигация в футере */
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav-link {
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer__nav-link:hover {
+    color: #fff;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #777;
+    font-size: 12px;
+}
+
+/* Общие стили для ссылок с иконками */
+.social-link {
+    font-size: 24px; /* Размер иконок */
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Цвет для Телеграма */
+.tg-icon {
+    color: #24A1DE;
+}
+
+/* Цвет для Ватсапа */
+.wa-icon {
+    color: #25D366;
+}
+
+/* Эффект при наведении (по желанию) */
+.social-link:hover {
+    opacity: 0.7;
+}
