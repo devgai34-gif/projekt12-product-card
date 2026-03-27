@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-// все ID и классы, которые ищет ваш скрипт
+// все ID и классы, которые ищет скрипт
 const dom = new JSDOM(`<!DOCTYPE html><html><body>
   <template id="student-template">
     <div class="student-card"></div>
