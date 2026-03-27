@@ -14,7 +14,7 @@ import { stdin as input, stdout as output } from 'node:process';
 
 const rl = readline.createInterface({ input, output });
 
-// Задание-2. Создаем карту названий - описаний (через .reduce)
+// Задание-2. картa названий - описаний (через .reduce)
 const productDescriptionMap = products.reduce((accumulator, currentProduct) => {
   accumulator[currentProduct.name] = currentProduct.description;
   return accumulator;
